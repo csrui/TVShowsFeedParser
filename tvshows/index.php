@@ -1,7 +1,7 @@
 <?php
 
 include 'tvshows.config.php';
-include 'libs/Parser.php';
+include '../libs/Parser.php';
 
 try {
 
