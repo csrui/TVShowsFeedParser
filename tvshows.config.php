@@ -1,3 +1,3 @@
 <?php 
 
-define('FEED_URL', 'http://tvshowsapp.com/feeds/%s.full.xml');
+define('FEED_URL', 'http://showrss.karmorra.info/feeds/%s.rss');
