@@ -1,3 +1,3 @@
 <?php 
 
-define('FEED_URL', 'http://showrss.karmorra.info/feeds/%s.rss');
+define('FEED_URL', 'http://showrss.info/feeds/%s.rss');
