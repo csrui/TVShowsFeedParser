@@ -62,10 +62,11 @@ class Parser
 
             preg_match('/(?:S|season)\W?(\d{1,2})(?:E|episode)\W?(\d{1,2})/', $title->nodeValue, $matches);
 
-            if ($starts[0] > $matches[1] || ($starts[0] == $matches[1] && $starts[1] > $matches[2])) {
-                $nodes_to_remove[] = $title->parentNode;
+            if (isset($starts[0]) && isset($starts[1]) && isset($matches[2])) {
+                if ($starts[0] > $matches[1] || ($starts[0] == $matches[1] && $starts[1] > $matches[2])) {
+                    $nodes_to_remove[] = $title->parentNode;
+                }
             }
-
         }
 
         if (count($nodes_to_remove) > 0) {
