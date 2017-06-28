@@ -12,7 +12,7 @@ class Parser
     private $parsed = null;
 
 
-    public function __construct($feed, $show)
+    public function __construct($show)
     {
 
         $this->doc = new \DOMDocument();
