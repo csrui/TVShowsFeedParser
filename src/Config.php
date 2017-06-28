@@ -4,7 +4,7 @@ namespace csrui\TVShowsFeedParser;
 
 class Config
 {
-    private static $sFeedUrl = 'http://showrss.info/feeds/%s.rss';
+    private static $sFeedUrl = 'https://showrss.info/show/%s.rss';
 
     public static function feedUrl($sFeedUrl = null)
     {
