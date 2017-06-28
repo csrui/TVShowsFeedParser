@@ -16,10 +16,12 @@ filter | INT    | An integer to specify the quality. (e.g. `720`)
 
 Let's break it down...
 
-* show=5 means we are looking at the Big Bang Theory feed
-* starts=06:19 means we are seeing only torrents episode 19 from season 6 and up 
-* filter=720 means we only want 720p results
+- `show=5` means we are looking at the _Big Bang Theory_ feed
+- `starts=06:19` means we are seeing only torrents starting at _season 6_, _episode 19_ and upwards
+- `filter=720` means we only want _720p_ results
 
-Note: Currently works only with [ShowRSS].
+### Notes
+
+- Currently this only works with [ShowRSS].
 
 [ShowRSS]: https://showrss.info
