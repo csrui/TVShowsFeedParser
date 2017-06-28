@@ -13,5 +13,4 @@ Let's break it down...
 * starts=06:19 means we are seeing only torrents episode 19 from season 6 and up 
 * filter=720 means we only want 720p results
 
-
-Note: Currently works only with http://showrss.info/
+Note: Currently works only with http://showrss.info

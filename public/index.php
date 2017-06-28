@@ -31,7 +31,5 @@ try {
     echo $parser->getFeed();
 
 } catch (Exception $e) {
-
     die($e->getMessage());
-
 }
