@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+namespace csrui\TVShowsFeedParser;
 
 class Parser {
 
@@ -11,11 +13,11 @@ class Parser {
 
 	public function __construct($feed, $show) {
 
-		$this->doc = new DOMDocument();
+		$this->doc = new \DOMDocument();
 		$this->doc->preserveWhiteSpace = false;
 
-		$this->doc->load(sprintf(FEED_URL, $show));
-		$this->xpath = new DOMXPath($this->doc);
+		$this->doc->load(sprintf(Config::FEED_URL, $show));
+		$this->xpath = new \DOMXPath($this->doc);
 
 	}
 
