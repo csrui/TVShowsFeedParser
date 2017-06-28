@@ -16,7 +16,7 @@ class Parser {
 		$this->doc = new \DOMDocument();
 		$this->doc->preserveWhiteSpace = false;
 
-		$this->doc->load(sprintf(Config::FEED_URL, $show));
+		$this->doc->load(sprintf(Config::feedUrl(), $show));
 		$this->xpath = new \DOMXPath($this->doc);
 
 	}
