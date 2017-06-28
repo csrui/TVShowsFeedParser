@@ -1,11 +1,12 @@
 <?php
 
-include 'tvshows.config.php';
-include '../libs/Parser.php';
+use csrui\TVShowsFeedParser;
+
+include __DIR__ . '/../vendor/autoload.php';
 
 try {
 
-	$parser = new Parser(FEED_URL, $_GET['show']);
+	$parser = new TVShowsFeedParser\Parser($_GET['show']);
 
 	# Filter HD or SD quality
 
@@ -23,14 +24,14 @@ try {
 		$parser->resume($_GET['starts']);
 
 	}
-	
+
 	# Output result feed
 
 	header('Content-type: application/xml');
 	echo $parser->getFeed();
-	
+
 } catch (Exception $e) {
 
 	die($e->getMessage());
-	
+
 }
