@@ -1,0 +1,11 @@
+{
+  "name": "csrui/tv-shows-feed-parser",
+  "description": "Filters torrent feeds for specific seasons and episodes.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "csrui\\TVShowsFeedParser\\": "src/"
+    }
+  }
+}
